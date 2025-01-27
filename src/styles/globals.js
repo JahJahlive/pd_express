@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: ${props => props.theme.fonts.main};
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     background: ${props => props.theme.colors.background1};
     color: ${props => props.theme.colors.primary1};
     cursor: default;
@@ -27,9 +27,6 @@ const GlobalStyles = createGlobalStyle`
   }
   a {
     text-decoration: none;
-  }
-  li{
-    list-style: none;
   }
 
 `;

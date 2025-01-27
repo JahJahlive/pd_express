@@ -1,7 +1,7 @@
 {
     "projets": "Projets",
     "technologies": "Technologies",
-    "a_propos": "A propos",
+    "a_propos": "A PROPOS",
     "hero": {
         "welcome" : "Bienvenue sur mon",
         "description": "Je m'appelle Yannick Kobe Mbaikwo, développeur Full Stack spécialisé dans la réalisation de solutions web intelligente sous Laravel / React / VueJs / NextJS / Wordpress depuis 2015.",
@@ -17,5 +17,7 @@
     },
     "footer": {
         "slogan": "Innover un projet à la fois."
-    }
+    },
+    "accueil" : "ACCUEIL",
+    "service_et_tarif": "SERVICES & TARIFS"
 }

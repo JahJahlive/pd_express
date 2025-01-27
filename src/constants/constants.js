@@ -8,37 +8,7 @@ export const projects = [
     source: 'https://google.com',
     visit: 'https://google.com',
     id: 0,
-  },
-  {
-    title: 'E-Commerce',
-    description_en:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    description_fr: "En le construisant, vous allez apprendre de nombreux sujets avancés sur React et JavaScript, ainsi que comment utiliser Stripe pour les transactions par carte. De plus, à la fin de la vidéo, vous disposerez de cette application de boutique en ligne unique et complexe que vous pourrez ajouter à votre portfolio. Et croyez-moi, les applications de commerce électronique sont impressionnantes.",
-    image: '/images/2.png',
-    tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 1,
-  },
-  {
-    title: 'WebRTC App',
-    description_en: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    description_fr: "Il s'agit d'un référentiel de code pour la vidéo YouTube correspondante. Dans ce didacticiel, nous allons créer et déployer une application de chat vidéo React à l'aide de WebRTC.",
-    image: '/images/3.jpg',
-    tags: ['React', 'WebRTC'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 2,
-  },
-  {
-    title: 'Unichat',
-    description_en: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    description_fr: "Il s'agit d'un référentiel de code pour le didacticiel vidéo correspondant. Dans cette vidéo, nous allons créer une application complète de chat en temps réel",
-    image: '/images/4.jpg',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 3,
-  },
+  }
 ];
 
 export const TimeLineData = [

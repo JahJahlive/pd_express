@@ -7,26 +7,11 @@ export const Img = styled.img`
   overflow: hidden;
 `
 
-export const GridContainer = styled.section`
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-padding: 3rem;
-place-items: center;
-column-gap: 2rem;
-row-gap: 3rem;
-@media ${(props) => props.theme.breakpoints.sm} {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  padding-bottom: 0;
-}
-
-`
 export const BlogCard = styled.div`
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  align-items: center;
   text-align: center;
-  width: 400px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -67,9 +52,11 @@ export const Intro = styled.div`
 
 
 export const CardInfo = styled.p`
-  width: 100%;
-  padding: 0 50px;
-  color: #e4e6e7;
+  width: 80%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 0 40px 0 10px;
+  color: black;
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
@@ -81,7 +68,6 @@ export const CardInfo = styled.p`
 
 
 export const UtilityList = styled.ul`
-  list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: space-around;

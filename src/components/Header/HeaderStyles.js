@@ -19,45 +19,48 @@ export const Container = styled.div`
 `;
 
 export const Span = styled.span`
-  font-size: 2rem;
+  font-size: 1.3rem;
+  width: 150px;
+  text-align:center;
+  font-weight: bold;
 `;
 
 export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 5 / 5;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 1 / 3 / 3;
   }
 `;
 export const Div2 = styled.div`
-  grid-area: 1 / 2 / 2 / 4;
+  grid-area: 1 / 3 / 3 / 6;
   display: flex;
-  justify-content: space-around;
+  gap:30px;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
 `;
 export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: top;
   @media ${(props) => props.theme.breakpoints.sm} {
-    align-items: center;
+    align-items: top;
     grid-area: 1 / 4 / 2 / 6;
   }
 `;
 
 // Navigation Links
 export const NavLink = styled.a`
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: darkblue;
+  letter-spacing: 3px;
   transition: 0.4s ease;
   &:hover {
-    color: #fff;
+    color: blue;
     opacity: 1;
     cursor: pointer;
   }
