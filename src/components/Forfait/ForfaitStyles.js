@@ -2,8 +2,8 @@ import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
   box-sizing: content-box;
-  background-image: url('/images/bg-section.png');
-text-align: center;
+  background-image: url('/images/bg-section2.png');
+
   background-position:  25%  10%;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0.1);
@@ -15,13 +15,12 @@ text-align: center;
     width: calc(100vw - 32px);
   }
 `
-
 export const Title = styled.h1`
  	color: white;
 	min-width: 280px;
 	letter-spacing: 0.02em;
-	font-size: 5rem;
-
+	font-size: 4.5rem;
+	text-align: center;
 	@media ${props => props.theme.breakpoints.md}{
 		font-size: 16px;
 		line-height: 28px;
@@ -33,15 +32,15 @@ export const Title = styled.h1`
 		min-width: 100px;
 	}
 `
-export const Slogan = styled.h2`
+export const Slogan = styled.p`
  	color: white;
-	min-width: 280px;
-	letter-spacing: 0.02em;
-	font-size: 2.5rem;
-	line-height: 20px;
-	padding: 0.5rem;
+	min-width: 200px;
+	letter-spacing: 0.07em;
+	font-size: 1.7rem;
+	line-height: 25px;
 	width: 50%;
 	margin: 0 auto;
+
 	@media ${props => props.theme.breakpoints.md}{
 		font-size: 16px;
 		line-height: 28px;
@@ -53,15 +52,37 @@ export const Slogan = styled.h2`
 		min-width: 100px;
 	}
 `
-
 export const FormCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
 `;
+
+export const ForfaitTable = styled.div`
+	display: flex;
+	width: 60%;
+	margin: 2rem auto;
+
+  @media ${props => props.theme.breakpoints.sm} {
+    padding: 0 16px 48px;
+    width: calc(100vw - 32px);
+  }
+`
+
+export const ForfaitItem = styled.div`
+	display: flex;
+	padding: 1.8rem;
+	flex-direction: column;
+	border: 0.01px solid #f0f0f0; 
+
+  @media ${props => props.theme.breakpoints.sm} {
+    padding: 0 16px 48px;
+    width: calc(100vw - 32px);
+  }
+`

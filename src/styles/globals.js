@@ -41,8 +41,19 @@ const GlobalStyles = createGlobalStyle`
     padding: 12px 20px;
   }
 
-  .wpcf7-submit {
+  .btnForfait {
+    display:flex;
+    align-items: center;
+    background-color: skyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
+  .wpcf7-submit {
     display:flex;
     align-items: center;
     background-color: darkblue;

@@ -235,7 +235,6 @@ const Cotation = () => {
                 colors={['white', 'white', 'white', 'white', 'white']}
                 />
             }
-            
           </button>
         </form>
       </FormCard>
