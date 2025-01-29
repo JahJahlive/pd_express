@@ -15,7 +15,7 @@ const About = () => {
         <div>
           <BlogCard>
             <CardInfo>
-              <h2 style={{color: "black" }}>A propos de Petit Déménagement Express.</h2>
+              <h1 style={{color: "black" }}>A propos de Petit Déménagement Express.</h1>
               <br />
               <p>Petit Déménagement Express est une agence de transport basée à Montréal et
     spécialisée dans les déménagements et transports de marchandises. Nous
@@ -29,14 +29,14 @@ const About = () => {
               <p>Choisir  Petit Déménagement Express, c’est s’assurer de travailler avec une
               agence de transport:</p>
               <br />
-              <ul style={{ padding: "0 50px 0 50px"}}>
+              <ul style={{ padding: "0 10px 0 50px"}}>
                 <li>Disponible : 7J/7, de 8h à 20h pour répondre à vos besoins.</li> 
                 <li>Fiable :nous ne transportons pas seulement vos biens, nous veillons à ce qu’ils arrivent bien en nombre et en qualité.</li> 
                 <li>Expérimentée : pendant 5 ans, nous avons cumulé beaucoup de succès mais aussi tiré des leçons qui nous permettent de mieux vous apporter satisfaction.</li> 
                 <li>Flexible : nous nous adaptons à vos contraintes et exigences pour vous donner la solution la plus adéquate à votre besoin.</li> 
               </ul>
             </CardInfo>
-            <Img src={image} />
+            <Img src='/images/transport-express-demenagemen-van-2-1.jpg' />
           </BlogCard>
           <p style={{ margin: "30px 0", textAlign: "center", fontSize: '23px', fontWeight: "500" }}>
           Vous prévoyez d’effectuer un déménagement ou le transport de vos marchandises ?  Contactez Petit Déménagement Express dès maintenant et obtenez immédiatement un devis !

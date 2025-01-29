@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Img = styled.img`
   width:100%;
   height:100%;
-  object-fit: cover;
   overflow: hidden;
 `
 
@@ -12,6 +11,7 @@ export const BlogCard = styled.div`
   grid-template-columns: auto auto auto auto auto;
   align-items: center;
   text-align: center;
+  padding: 4rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -54,8 +54,8 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 80%;
   grid-column-start: 1;
-  grid-column-end: 4;
-  padding: 0 40px 0 10px;
+  grid-column-end: 3;
+  padding: 0 20px 0 10px;
   color: black;
   font-style: 2rem;
   line-height: 24px;

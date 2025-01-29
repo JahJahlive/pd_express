@@ -16,8 +16,7 @@ const Header = () => {
     <Div1>
       <Link href="/">
         <a style={{ display: "flex", alignItems: "center", color: "blue", marginBottom: "10px", justifyContent: "space-between"}}>
-          <FaTruck size="4rem" /> 
-          <Span>PETIT DEMENAGEMENT EXPRESS</Span>
+          <img src='/images/logo-petit-demenagements-1.png' width='80%' />
         </a>
       </Link>
     </Div1>

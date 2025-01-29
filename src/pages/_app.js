@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import Theme from '../styles/theme';
 import './css/embla.css';
 

@@ -1,3 +1,4 @@
+
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
@@ -29,6 +30,42 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
+  input[type=text], input[type=email], input[type=tel], input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+  }
+
+  .wpcf7-submit {
+
+    display:flex;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .wpcf7-submit:hover {
+    background-color: blue;
+  }
+
+  .error {
+    border: 2px solid red !important;
+    border-radius: 4px;
+  }
+  
+  .wpcf7-list-item-label{
+    font-size: 12px;
+  }
 `;
 
 export default GlobalStyles;
