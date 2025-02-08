@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const SlideItem = styled.div`
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background-image: url(${props => props.bg});
   background-size: cover;
@@ -10,6 +10,10 @@ export const SlideItem = styled.div`
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0.1);
   background-blend-mode: lighten;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 60vh;
+  }
 `;
 
 export const Title = styled.h1`
@@ -39,6 +43,6 @@ export const Link = styled.a`
     cursor: pointer;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 `;

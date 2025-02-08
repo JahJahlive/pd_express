@@ -23,13 +23,12 @@ export const Title = styled.h1`
 	font-size: 5rem;
 
 	@media ${props => props.theme.breakpoints.md}{
-		font-size: 16px;
+		font-size: 30px;
 		line-height: 28px;
 	}
 
 	@media ${props => props.theme.breakpoints.sm}{
-		line-height: 22px;
-		font-size: 14px;
+		line-height: 4rem;
 		min-width: 100px;
 	}
 `
@@ -42,14 +41,10 @@ export const Slogan = styled.h2`
 	padding: 0.5rem;
 	width: 50%;
 	margin: 0 auto;
-	@media ${props => props.theme.breakpoints.md}{
-		font-size: 16px;
-		line-height: 28px;
-	}
 
 	@media ${props => props.theme.breakpoints.sm}{
 		line-height: 22px;
-		font-size: 14px;
+		font-size: 18px;
 		min-width: 100px;
 	}
 `
@@ -63,5 +58,33 @@ export const FormCard = styled.div`
   min-height: 400px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
+  }
+`;
+
+export const CardItem = styled.div`
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+  }
+`;
+
+
+export const FlexBlock = styled.div`
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 2rem;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    flex-direction: column;
+  }
+`;
+
+export const Block = styled.div`
+	text-align:center;
+  width: 33%;
+  @media ${(props) => props.theme.breakpoints.lg} {
+  display:flex;
+  margin: 0 auto;
+    flex-direction: column;
+	width: 80%;
   }
 `;

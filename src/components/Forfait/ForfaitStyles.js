@@ -28,7 +28,7 @@ export const Title = styled.h1`
 
 	@media ${props => props.theme.breakpoints.sm}{
 		line-height: 22px;
-		font-size: 14px;
+		font-size: 1.8rem;
 		min-width: 100px;
 	}
 `
@@ -44,6 +44,8 @@ export const Slogan = styled.p`
 	@media ${props => props.theme.breakpoints.md}{
 		font-size: 16px;
 		line-height: 28px;
+		width: 90%;
+		font-size: 1.4rem;
 	}
 
 	@media ${props => props.theme.breakpoints.sm}{
@@ -66,12 +68,19 @@ export const FormCard = styled.div`
 
 export const ForfaitTable = styled.div`
 	display: flex;
-	width: 60%;
+	width: 80%;
 	margin: 2rem auto;
+
+  @media ${props => props.theme.breakpoints.lg} {
+	margin: 1rem auto;
+	width: 80%;
+	flex-direction: column;
+  }
 
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
     width: calc(100vw - 32px);
+	flex-direction: column;
   }
 `
 
@@ -81,6 +90,9 @@ export const ForfaitItem = styled.div`
 	flex-direction: column;
 	border: 0.01px solid #f0f0f0; 
 
+	@media ${props => props.theme.breakpoints.lg} {
+	margin: 1rem;
+  }
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
     width: calc(100vw - 32px);

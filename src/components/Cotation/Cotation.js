@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FormCard, FooterWrapper, Slogan, Title } from './CotationStyles';
+import { FormCard, FooterWrapper, Slogan, Title, FlexBlock, Block } from './CotationStyles';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
@@ -85,8 +85,8 @@ const Cotation = () => {
       <FormCard>
         <h2>Remplissez le formulaire </h2><br /> <br />
         <form  onSubmit={handleSubmit(onSubmit)} method="post" class="wpcf7-form init" aria-label="Formulaire de contact">
-          <div className="flexBloc" style={{ display: "flex", justifyContent: 'space-around', gap: '10px' }}>
-            <div className="block" style={{ textAlign: 'left'}}>
+          <FlexBlock>
+            <Block>
               <div style={{ display: 'flex', gap: '10px' }}>
                 <div>
                   <label><input type="radio" name="typetransport" value="Transport/Livraison" checked="checked" />
@@ -154,8 +154,8 @@ const Cotation = () => {
                 type="text" name="budget" 
                 placeholder='Budget ($)' 
               />
-            </div>
-            <div className="block" ><br />
+            </Block>
+            <Block>
               <select 
                 onChange={handleChange}
                 {...register("typeproprietedepart")} className={errors.typeproprietedepart ? 'error' : ''}  aria-required="true" aria-invalid="false" name="typeproprietedepart"  {...register("typeproprietedepart")}>
@@ -212,15 +212,16 @@ const Cotation = () => {
                   <option value="Ascenseur">Ascenseur</option>
                   <option value="Aucun - Rez de chaussée">Aucun - Rez de chaussée</option>
               </select>
-            </div>
-            <div  className="block" style={{ textAlign: 'right'}}><br />
+            </Block>
+            <Block>
                 <textarea 
                 onChange={handleChange}
-                cols="40" rows="10" s
+                 rows="10" 
+                 style={{ width: '100%'}}
                 placeholder="Précisez vos besoins - Liste d'objets à déménager, objets délicats, besoin de déménageurs, nombre de marches d'escalier, etc." 
                 name="message">{formState.message}</textarea>
-            </div>
-          </div>
+            </Block>
+          </FlexBlock>
           <button class="wpcf7-form-control wpcf7-submit has-spinner" type="submit">
             <span>Soumettre</span>
             {

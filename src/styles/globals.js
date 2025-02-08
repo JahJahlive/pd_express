@@ -21,7 +21,8 @@ const GlobalStyles = createGlobalStyle`
     background: ${props => props.theme.colors.background1};
     color: ${props => props.theme.colors.primary1};
     cursor: default;
-
+    display: flex;
+    flex-direction: column;
   }
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${props => props.theme.fonts.title};
@@ -77,6 +78,12 @@ const GlobalStyles = createGlobalStyle`
   .wpcf7-list-item-label{
     font-size: 12px;
   }
+
+  .embla {
+    display: flex;
+    flex-direction: column;
+  }
+}
 `;
 
 export default GlobalStyles;

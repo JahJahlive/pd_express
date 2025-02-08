@@ -3,6 +3,8 @@
 .embla {
   margin: auto;
   --slide-size: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .embla__viewport {
   overflow: hidden;
