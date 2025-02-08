@@ -6,7 +6,6 @@ export const Img = styled.img`
   width: 80%;
   height: 100%;
   @media ${(props) => props.theme.breakpoints.md} {
-    width: auto;
     height: auto;
   }
 `
@@ -19,12 +18,7 @@ export const Container = styled.div`
   padding-right: 1.5rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-    padding: 0px;
+    position: relative;
   }
 `;
 
@@ -53,7 +47,9 @@ export const Div2 = styled.div`
     background: white;
     width: 200px;
     text-align:center;
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 5rem;
   }
 `;
 export const Div3 = styled.div`
@@ -61,6 +57,13 @@ export const Div3 = styled.div`
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: none;
+  }
+`;
+
+export const BurgerMenu = styled.a`
+    display: none;
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: block;
   }
 `;
 

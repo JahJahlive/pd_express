@@ -12,7 +12,6 @@ export const FooterWrapper = styled.section`
 
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
-    width: calc(100vw - 32px);
   }
 `
 export const Title = styled.h1`
@@ -79,7 +78,7 @@ export const ForfaitTable = styled.div`
 
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
-    width: calc(100vw - 32px);
+
 	flex-direction: column;
   }
 `
@@ -90,11 +89,10 @@ export const ForfaitItem = styled.div`
 	flex-direction: column;
 	border: 0.01px solid #f0f0f0; 
 
-	@media ${props => props.theme.breakpoints.lg} {
-	margin: 1rem;
+@media ${props => props.theme.breakpoints.lg} {
+	
   }
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;
-    width: calc(100vw - 32px);
   }
 `

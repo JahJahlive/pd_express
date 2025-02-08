@@ -3,17 +3,12 @@ import styled from "styled-components"
 export const FooterWrapper = styled.section`
   box-sizing: content-box;
   background-image: url('/images/bg-section.png');
-text-align: center;
+  text-align: center;
   background-position:  25%  10%;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0.1);
   background-blend-mode: lighten;
   padding: 2rem;
-
-  @media ${props => props.theme.breakpoints.sm} {
-    padding: 0 16px 48px;
-    width: calc(100vw - 32px);
-  }
 `
 
 export const Title = styled.h1`
@@ -45,7 +40,7 @@ export const Slogan = styled.h2`
 	@media ${props => props.theme.breakpoints.sm}{
 		line-height: 22px;
 		font-size: 18px;
-		min-width: 100px;
+    	width: 100%;
 	}
 `
 

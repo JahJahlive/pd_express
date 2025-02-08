@@ -8,7 +8,7 @@ export const Layout = ({children}) => {
   return (
     <Container>
      <Header/>
-     <main>{children}</main> 
+     <main style={{ textAlign: 'center'}}>{children}</main> 
      <Footer/>
     </Container>
   )

@@ -41,7 +41,7 @@ export const CardInfo = styled.p`
   }
 `;
 
-export const AboutInfo = styled.p`
+export const AboutInfo = styled.div`
   display: block;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 3rem
